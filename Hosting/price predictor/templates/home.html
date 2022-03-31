@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NYC Property Sales Price Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body background="/static/images/bg.jpg">
+<!-- Input Form -->
+<div  class="input form">
+  <form action="{{url_for('predict')}}"method="post" id="input head">
+    <h1 id="heading">Sales Price Prediction</h1>
+    <h3 id="input">Enter name of the Borough</h3>
+    <input type="text" name="borough" placeholder="Borough Name">
+    <br>
+    <h3 id="input">Count of Residential Units</h3>
+    <input type="text" name="r_units" placeholder="Residential Units">
+    <br>
+    <h3 id="input">Count of Commercial Units</h3>
+    <input type="text" name="c_units" placeholder="Commercial Units">
+    <br>
+    <h3 id="input">Enter Gross Land of Property</h3>
+    <input type="text" name="land_area" placeholder="Land Area">
+    <br>
+    <h3 id="input">Enter Gross Area of Property</h3>
+    <input type="text" name="gross_area" placeholder="Gross Area">
+    <br>
+    <h3 id="input">Enter age of Property in years</h3>
+    <input type="text" name="building_age" placeholder="Building Age">
+    <br>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+</div>
+   
+</body>
+</html>
